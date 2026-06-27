@@ -1,0 +1,677 @@
+<!--&lt;!&ndash;
+<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;{% load static %}&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; Mirrored from colorlib.com/etc/regform/colorlib-regform-5/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2022 16:47:36 GMT &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; Added by HTTrack &ndash;&gt;<meta http-equiv="content-type" content="text/html;charset=UTF-8" />&lt;!&ndash; /Added by HTTrack &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">&ndash;&gt;-->
+<!--&lt;!&ndash;<meta name="description" content="Colorlib Templates">&ndash;&gt;-->
+<!--&lt;!&ndash;<meta name="author" content="Colorlib">&ndash;&gt;-->
+<!--&lt;!&ndash;<meta name="keywords" content="Colorlib Templates">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<title>Au Register Forms by Colorlib</title>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">&ndash;&gt;-->
+<!--&lt;!&ndash;<link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<style id="" media="all">@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: italic;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 300;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWVAexQ.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: italic;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 400;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexQ.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: italic;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 600;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWVAexQ.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: italic;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 700;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWVAexQ.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: italic;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 800;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWVAexQ.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 300;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 400;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 600;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 700;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;@font-face {&ndash;&gt;-->
+<!--&lt;!&ndash;  font-family: 'Open Sans';&ndash;&gt;-->
+<!--&lt;!&ndash;  font-style: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-weight: 800;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-stretch: normal;&ndash;&gt;-->
+<!--&lt;!&ndash;  font-display: swap;&ndash;&gt;-->
+<!--&lt;!&ndash;  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVc.ttf) format('truetype');&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">&ndash;&gt;-->
+<!--&lt;!&ndash;<link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">&ndash;&gt;-->
+<!--&lt;!&ndash;<meta name="robots" content="noindex, follow">&ndash;&gt;-->
+<!--&lt;!&ndash;<script nonce="50d424af-14cb-492c-bb27-7685380054fb">(function(w,d){!function(a,e,t,r){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zaraz={deferred:[]},a.zaraz.q=[],a.zaraz._f=function(e){return function(){var t=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:t})}};for(const e of["track","set","ecommerce","debug"])a.zaraz[e]=a.zaraz._f(e);a.zaraz.init=()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r),n=e.getElementsByTagName("title")[0];for(n&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.x=Math.random(),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.zarazData.q=[];a.zaraz.q.length;){const e=a.zaraz.q.shift();a.zarazData.q.push(e)}z.defer=!0;for(const e of[localStorage,sessionStorage])Object.keys(e||{}).filter((a=>a.startsWith("_zaraz_"))).forEach((t=>{try{a.zarazData["z_"+t.slice(7)]=JSON.parse(e.getItem(t))}catch{a.zarazData["z_"+t.slice(7)]=e.getItem(t)}}));z.referrerPolicy="origin",z.src="../../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)},["complete","interactive"].includes(e.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);</script></head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="wrapper wrapper&#45;&#45;w790">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="card card-5">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="card-heading">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="title">Registration Form</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;<form method="POST">&ndash;&gt;-->
+<!--&lt;!&ndash;    {% csrf_token %}&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-row m-b-55">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="name">Name</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="value">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="row row-space">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group-desc">&ndash;&gt;-->
+<!--&lt;!&ndash;<input class="input&#45;&#45;style-5" type="text" name="first_name">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="label&#45;&#45;desc">first name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group-desc">&ndash;&gt;-->
+<!--&lt;!&ndash;<input class="input&#45;&#45;style-5" type="text" name="last_name">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="label&#45;&#45;desc">last name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<div class="form-row">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<div class="name">Company</div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<div class="value">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<div class="input-group">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<input class="input&#45;&#45;style-5" type="text" name="company">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-row">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="name">Email</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="value">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;<input class="input&#45;&#45;style-5" type="email" name="email">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-row m-b-55">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="name">Phone</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="value">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="row row-refine">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group-desc">&ndash;&gt;-->
+<!--&lt;!&ndash;<input class="input&#45;&#45;style-5" type="text" name="area_code">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="label&#45;&#45;desc">Area Code</label>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash; <div class="col-9">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group-desc">&ndash;&gt;-->
+<!--&lt;!&ndash;<input class="input&#45;&#45;style-5" type="text" name="phone">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="label&#45;&#45;desc">Phone Number</label>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-row">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="name">Sabab</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="value">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="rs-select2 js-select-simple select&#45;&#45;no-search">&ndash;&gt;-->
+<!--&lt;!&ndash;<select name="subject">&ndash;&gt;-->
+<!--&lt;!&ndash;<option disabled="disabled" selected="selected">Nima uchun bu saytga kirmoqchisiz.</option>&ndash;&gt;-->
+<!--&lt;!&ndash;<option>Kitob o'qish uchun.</option>&ndash;&gt;-->
+<!--&lt;!&ndash;<option>Shunchaki kirib kormoqchiman.</option>&ndash;&gt;-->
+<!--&lt;!&ndash;<option>Qanaqa kitoblar borligini kormoqchiman.</option>&ndash;&gt;-->
+<!--&lt;!&ndash;</select>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="select-dropdown"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="form-row p-t-20">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="label label&#45;&#45;block">Bu saytga avval kirganmisiz?</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="p-t-15">&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="radio-container m-r-55">Ha&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="radio" checked="checked" name="exist">&ndash;&gt;-->
+<!--&lt;!&ndash;<span class="checkmark"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<label class="radio-container">Yo'q&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="radio" name="exist">&ndash;&gt;-->
+<!--&lt;!&ndash;<span class="checkmark"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;</label>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div>&ndash;&gt;-->
+<!--&lt;!&ndash;<button class="btn btn&#45;&#45;radius-2 btn&#45;&#45;red" type="submit">Register</button>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script src="{% static 'vendor/select2/select2.min.js' %}"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script src="{% static 'js/global.js' %}"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;  window.dataLayer = window.dataLayer || [];&ndash;&gt;-->
+<!--&lt;!&ndash;  function gtag(){dataLayer.push(arguments);}&ndash;&gt;-->
+<!--&lt;!&ndash;  gtag('js', new Date());&ndash;&gt;-->
+
+<!--&lt;!&ndash;  gtag('config', 'UA-23581568-13');&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"723024d0bf728b51","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Mirrored from colorlib.com/etc/regform/colorlib-regform-5/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2022 16:47:39 GMT &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--<meta name="description" content="Colorlib Templates">-->
+<!--<meta name="author" content="Colorlib">-->
+<!--<meta name="keywords" content="Colorlib Templates">-->
+<!--<title>Au Register Forms by Colorlib</title>-->
+
+<!--<link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">-->
+<!--<link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">-->
+
+<!--<style id="" media="all">@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: italic;-->
+<!--  font-weight: 300;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWVAexQ.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: italic;-->
+<!--  font-weight: 400;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexQ.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: italic;-->
+<!--  font-weight: 600;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWVAexQ.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: italic;-->
+<!--  font-weight: 700;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWVAexQ.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: italic;-->
+<!--  font-weight: 800;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWVAexQ.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: normal;-->
+<!--  font-weight: 300;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: normal;-->
+<!--  font-weight: 400;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: normal;-->
+<!--  font-weight: 600;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: normal;-->
+<!--  font-weight: 700;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');-->
+<!--}-->
+<!--@font-face {-->
+<!--  font-family: 'Open Sans';-->
+<!--  font-style: normal;-->
+<!--  font-weight: 800;-->
+<!--  font-stretch: normal;-->
+<!--  font-display: swap;-->
+<!--  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVc.ttf) format('truetype');-->
+<!--}-->
+<!--</style>-->
+
+<!--<link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">-->
+<!--<link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">-->
+
+<!--<link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">-->
+<!--<meta name="robots" content="noindex, follow">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">-->
+<!--<div class="wrapper wrapper&#45;&#45;w790">-->
+<!--<div class="card card-5">-->
+<!--<div class="card-heading">-->
+<!--<h2 class="title">Registration Form</h2>-->
+<!--</div>-->
+<!--<div class="card-body">-->
+<!--&lt;!&ndash; FORM ACTION O'ZGARTIRILDI &ndash;&gt;-->
+<!--<form method="POST" action="{% url 'register' %}">-->
+<!--    {% csrf_token %}-->
+<!--<div class="form-row m-b-55">-->
+<!--<div class="name">Name</div>-->
+<!--<div class="value">-->
+<!--<div class="row row-space">-->
+<!--<div class="col-2">-->
+<!--<div class="input-group-desc">-->
+<!--<input class="input&#45;&#45;style-5" type="text" name="first_name">-->
+<!--<label class="label&#45;&#45;desc">first name</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-2">-->
+<!--<div class="input-group-desc">-->
+<!--<input class="input&#45;&#45;style-5" type="text" name="last_name">-->
+<!--<label class="label&#45;&#45;desc">last name</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-row">-->
+<!--<div class="name">Email</div>-->
+<!--<div class="value">-->
+<!--<div class="input-group">-->
+<!--<input class="input&#45;&#45;style-5" type="email" name="email">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-row m-b-55">-->
+<!--<div class="name">Phone</div>-->
+<!--<div class="value">-->
+<!--<div class="row row-refine">-->
+<!--<div class="col-3">-->
+<!--<div class="input-group-desc">-->
+<!--<input class="input&#45;&#45;style-5" type="text" name="area_code">-->
+<!--<label class="label&#45;&#45;desc">Area Code</label>-->
+<!--</div>-->
+<!--</div>-->
+<!-- <div class="col-9">-->
+<!--<div class="input-group-desc">-->
+<!--<input class="input&#45;&#45;style-5" type="text" name="phone">-->
+<!--<label class="label&#45;&#45;desc">Phone Number</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-row">-->
+<!--<div class="name">Sabab</div>-->
+<!--<div class="value">-->
+<!--<div class="input-group">-->
+<!--<div class="rs-select2 js-select-simple select&#45;&#45;no-search">-->
+<!--<select name="subject">-->
+<!--<option disabled="disabled" selected="selected">Nima uchun bu saytga kirmoqchisiz.</option>-->
+<!--<option>Kitob o'qish uchun.</option>-->
+<!--<option>Shunchaki kirib kormoqchiman.</option>-->
+<!--<option>Qanaqa kitoblar borligini kormoqchiman.</option>-->
+<!--</select>-->
+<!--<div class="select-dropdown"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-row p-t-20">-->
+<!--<label class="label label&#45;&#45;block">Bu saytga avval kirganmisiz?</label>-->
+<!--<div class="p-t-15">-->
+<!--<label class="radio-container m-r-55">Ha-->
+<!--<input type="radio" checked="checked" name="exist">-->
+<!--<span class="checkmark"></span>-->
+<!--</label>-->
+<!--<label class="radio-container">Yo'q-->
+<!--<input type="radio" name="exist">-->
+<!--<span class="checkmark"></span>-->
+<!--</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div>-->
+<!--<button class="btn btn&#45;&#45;radius-2 btn&#45;&#45;red" type="submit">Register</button>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>-->
+<!--<script src="{% static 'vendor/select2/select2.min.js' %}"></script>-->
+<!--<script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>-->
+<!--<script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>-->
+
+<!--<script src="{% static 'js/global.js' %}"></script>-->
+
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
+
+<!--  gtag('config', 'UA-23581568-13');-->
+<!--</script>-->
+<!--<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"723024d0bf728b51","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Colorlib Templates">
+<meta name="author" content="Colorlib">
+<meta name="keywords" content="Colorlib Templates">
+<title>Au Register Forms by Colorlib</title>
+
+<link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+<link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+
+<style id="" media="all">@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://colorlib.com/fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVc.ttf) format('truetype');
+}
+</style>
+
+<link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+<link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+<link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+<div class="wrapper wrapper--w790">
+<div class="card card-5">
+<div class="card-heading">
+<h2 class="title">Registration Form</h2>
+</div>
+<div class="card-body">
+
+<!-- ================= YANGI QO'SHILGAN QISM: Xatolik bo'lsa, qizil rasmda ko'rinadi ================= -->
+{% if error %}
+    <div style="background-color: #f8d7da; color: #721c24; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px; text-align: center; margin-bottom: 20px; font-weight: bold;">
+        {{ error }}
+    </div>
+{% endif %}
+<!-- ============================================================================================= -->
+
+<form method="POST" action="{% url 'register' %}">
+    {% csrf_token %}
+<div class="form-row m-b-55">
+<div class="name">Name</div>
+<div class="value">
+<div class="row row-space">
+<div class="col-2">
+<div class="input-group-desc">
+<input class="input--style-5" type="text" name="first_name">
+<label class="label--desc">first name</label>
+</div>
+</div>
+<div class="col-2">
+<div class="input-group-desc">
+<input class="input--style-5" type="text" name="last_name">
+<label class="label--desc">last name</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="name">Email</div>
+<div class="value">
+<div class="input-group">
+<input class="input--style-5" type="email" name="email">
+</div>
+</div>
+</div>
+<div class="form-row m-b-55">
+<div class="name">Phone</div>
+<div class="value">
+<div class="row row-refine">
+<div class="col-3">
+<div class="input-group-desc">
+<input class="input--style-5" type="text" name="area_code">
+<label class="label--desc">Area Code</label>
+</div>
+</div>
+ <div class="col-9">
+<div class="input-group-desc">
+<input class="input--style-5" type="text" name="phone">
+<label class="label--desc">Phone Number</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="name">Sabab</div>
+<div class="value">
+<div class="input-group">
+<div class="rs-select2 js-select-simple select--no-search">
+<select name="subject">
+<option disabled="disabled" selected="selected">Nima uchun bu saytga kirmoqchisiz.</option>
+<option>Kitob o'qish uchun.</option>
+<option>Shunchaki kirib kormoqchiman.</option>
+<option>Qanaqa kitoblar borligini kormoqchiman.</option>
+</select>
+<div class="select-dropdown"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row p-t-20">
+<label class="label label--block">Bu saytga avval kirganmisiz?</label>
+<div class="p-t-15">
+<label class="radio-container m-r-55">Ha
+<input type="radio" checked="checked" name="exist">
+<span class="checkmark"></span>
+</label>
+<label class="radio-container">Yo'q
+<input type="radio" name="exist">
+<span class="checkmark"></span>
+</label>
+</div>
+</div>
+<div>
+<button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>
+<script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>
+
+<script src="{% static 'js/global.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"723024d0bf728b51","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
